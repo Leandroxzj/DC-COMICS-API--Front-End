@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DC — Dark Metal</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Estilo leve para a frase heroica */
+    .quote {
+      text-align: center;
+      font-style: italic;
+      font-size: 1.1rem;
+      color: #ccc;
+      margin: 16px auto;
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div>
+          <h1>
+            <img src="assets/dc-logo.png" alt="DC Logo" style="width: 40px; vertical-align: middle; margin-right: 8px;">
+            DC — Dark Metal
+          </h1>
+          <p class="tagline">Personagens da DC (dados via SuperHero API)</p>
+        </div>
+      </div>
+      <nav class="nav-actions">
+        <input id="searchInput" placeholder="Buscar personagem..." aria-label="Buscar personagem" />
+        <button id="searchBtn">Pesquisar</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-content">
+
+    <!-- ✅ Frase heroica vinda via fetch -->
+    <p id="heroQuote" class="quote">Carregando frase heroica...</p>
+
+    <section class="controls-row">
+      <div class="stats">Exibindo personagens famosos da DC. Use a busca para procurar por outros.</div>
+      <div class="controls">
+        <button id="loadMoreBtn" class="btn">Carregar lista inicial</button>
+        <button id="topBtn" class="btn ghost">Topo</button>
+      </div>
+    </section>
+
+    <section id="cardsContainer" class="cards-list" aria-live="polite">
+      <!-- Cards dinâmicos aparecem aqui -->
+    </section>
+
+    <div id="loading" class="loading" hidden>Carregando...</div>
+    <div id="error" class="error" hidden></div>
+  </main>
+
+  <!-- Modal de detalhes -->
+  <div id="modal" class="modal" hidden role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <button id="modalClose" class="modal-close" aria-label="Fechar">✕</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>Trabalho Front-End • API: SuperHero API. Leia o README para obter o token.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- ✅ Script simples com fetch temático -->
+  <script>
+    const quoteEl = document.getElementById('heroQuote');
+
+    fetch('https://api.quotable.io/random?tags=inspirational')
+      .then(response => response.json())
+      .then(data => {
+        quoteEl.textContent = `"${data.content}" — ${data.author}`;
+      })
+      .catch(error => {
+        console.error('Erro ao buscar citação:', error);
+        quoteEl.textContent = 'Nem todos os heróis usam capas...';
+      });
+  </script>
+</body>
+</html>

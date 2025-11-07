@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Batman",
+    "file": "batman.jpg",
+    "alignment": "good",
+    "publisher": "DC Comics",
+    "fullName": "Bruce Wayne",
+    "firstAppearance": "Detective Comics #27"
+  },
+  {
+    "name": "Superman",
+    "file": "Superman.jpg",
+    "alignment": "good",
+    "publisher": "DC Comics",
+    "fullName": "Clark Kent",
+    "firstAppearance": "Action Comics #1"
+  },
+  {
+    "name": "Wonder Woman",
+    "file": "wonderwoman.jpg",
+    "alignment": "good",
+    "publisher": "DC Comics",
+    "fullName": "Diana Prince",
+    "firstAppearance": "All Star Comics #8"
+  },
+  {
+    "name": "The Flash",
+    "file": "Flash.jpg",
+    "alignment": "good",
+    "publisher": "DC Comics",
+    "fullName": "Barry Allen",
+    "firstAppearance": "Showcase #4"
+  },
+  {
+    "name": "Green Lantern",
+    "file": "greenlantern.jpg",
+    "alignment": "good",
+    "publisher": "DC Comics",
+    "fullName": "Hal Jordan",
+    "firstAppearance": "Showcase #22"
+  },
+  {
+    "name": "Aquaman",
+    "file": "aquaman.jpg",
+    "alignment": "good",
+    "publisher": "DC Comics",
+    "fullName": "Arthur Curry",
+    "firstAppearance": "More Fun Comics #73"
+  },
+  {
+    "name": "Cyborg",
+    "file": "cyborg.jpg",
+    "alignment": "good",
+    "publisher": "DC Comics",
+    "fullName": "Victor Stone",
+    "firstAppearance": "DC Comics Presents #26"
+  },
+  {
+    "name": "Joker",
+    "file": "joker.jpg",
+    "alignment": "bad",
+    "publisher": "DC Comics",
+    "fullName": "Desconhecido",
+    "firstAppearance": "Batman #1"
+  },
+  {
+    "name": "Harley Quinn",
+    "file": "harleyquinn.jpg",
+    "alignment": "bad",
+    "publisher": "DC Comics",
+    "fullName": "Harleen Quinzel",
+    "firstAppearance": "Batman: The Animated Series"
+  },
+  {
+    "name": "Lex Luthor",
+    "file": "lexluthor.jpg",
+    "alignment": "bad",
+    "publisher": "DC Comics",
+    "fullName": "Lex Luthor",
+    "firstAppearance": "Action Comics #23"
+  },
+  {
+    "name": "Darkseid",
+    "file": "darkseid.jpg",
+    "alignment": "bad",
+    "publisher": "DC Comics",
+    "fullName": "Uxas",
+    "firstAppearance": "Superman’s Pal Jimmy Olsen #134"
+  },
+  {
+    "name": "Nightwing",
+    "file": "nightwing.jpg",
+    "alignment": "good",
+    "publisher": "DC Comics",
+    "fullName": "Dick Grayson",
+    "firstAppearance": "Tales of the Teen Titans #44"
+  }
+]
